@@ -1,1 +1,21 @@
+#include <stdio.h>
+#include <math.h>
 
+int main(void){
+    float a;
+    float b;
+    float c;
+    printf("Digite os tres numeros");
+    scanf("%f %f %f", &a, &b, &c);
+    float delta = (b * b) - 4 * a * c;
+    delta= sqrt(delta);
+    printf("A resposta é : %.2f\n", delta);
+    
+    float x1;
+    float x2;
+    x1 = (-b + delta) / 2 * a;
+    x2 = (-b - delta) / 2 * a;
+    printf("O x1 é: %.2f\n", x1);
+    printf("O x2 é: %.2f\n", x2);
+    return 0;
+    }
